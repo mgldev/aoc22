@@ -14,7 +14,6 @@ class Round
         $score = $this->mine->getScore();
 
         return $score + match (true) {
-
             $this->mine->matches($this->theirs) => 3,
             $this->mine->defeats($this->theirs) => 6,
             default => 0,
