@@ -6,6 +6,7 @@ use AOC\Helper\InputReader;
 
 $sum = 0;
 $group = [];
+
 foreach (array_filter(InputReader::fileToLines(__DIR__ . '/../input.txt')) as $line) {
     $group[] = str_split($line);
 
