@@ -14,7 +14,7 @@ use AOC\Helper\InputReader;
 /**
  * Class PartTwoRoundProvider
  *
- * @package AOC\D2\P2
+ * @package AOC\P2\P2
  */
 class PartTwoRoundProvider implements RoundProviderInterface
 {

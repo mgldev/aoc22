@@ -2,11 +2,6 @@
 
 namespace AOC\D2\P1;
 
-use AOC\D2\P1\Hand\Paper;
-use AOC\D2\P1\Hand\Rock;
-use AOC\D2\P1\Hand\Scissors;
-use AOC\Helper\InputReader;
-
 /**
  * Class StrategyGuide
  *

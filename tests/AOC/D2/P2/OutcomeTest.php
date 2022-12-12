@@ -14,7 +14,7 @@ use PHPUnit\Framework\TestCase;
  *
  * ./vendor/bin/phpunit --filter OutcomeTest
  *
- * @package Tests\AOC\D2\P1
+ * @package Tests\AOC\P2\P1
  */
 class OutcomeTest extends TestCase
 {

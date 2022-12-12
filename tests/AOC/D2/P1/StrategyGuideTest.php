@@ -10,7 +10,7 @@ use PHPUnit\Framework\TestCase;
  *
  * ./vendor/bin/phpunit --filter StrategyGuideTest
  *
- * @package Tests\AOC\D2\P1
+ * @package Tests\AOC\P2\P1
  */
 class StrategyGuideTest extends TestCase
 {

@@ -10,7 +10,7 @@ use AOC\D2\P1\Hand\Scissors;
 /**
  * Class Outcome
  *
- * @package AOC\D2\P2
+ * @package AOC\P2\P2
  */
 enum Outcome: string
 {
