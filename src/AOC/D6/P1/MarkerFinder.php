@@ -43,7 +43,7 @@ class MarkerFinder
 
     /**
      * @param string $filename
-     * 
+     *
      * @return static
      */
     public static function fromInput(string $filename): self
