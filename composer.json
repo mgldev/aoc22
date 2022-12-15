@@ -13,7 +13,8 @@
     }
   ],
   "require": {
-    "ext-json": "*"
+    "ext-json": "*",
+    "ext-gmp": "*"
   },
   "autoload": {
     "psr-4": {
