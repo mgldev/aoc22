@@ -20,8 +20,7 @@ foreach (InputReader::fileToLines(__DIR__ . '/../input.txt') as $instruction) {
             break;
 
         case 'addx':
-            $history[$cycle + 1] = $x;
-            $history[$cycle + 2] = $x;
+            $history[$cycle + 1] = $history[$cycle + 2] = $x;
             $x += $value;
             $cycle += 2;
             break;
@@ -30,12 +29,8 @@ foreach (InputReader::fileToLines(__DIR__ . '/../input.txt') as $instruction) {
 
 $sum = 20 * $history[20];
 
-$crt = 0;
-
 for ($i = 60; $i <= 220; $i += 40) {
     $sum += $i * $history[$i];
 }
-
-var_dump($history);
 
 echo "Part 1: $sum\n";
