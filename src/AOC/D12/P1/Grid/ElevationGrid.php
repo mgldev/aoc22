@@ -78,6 +78,29 @@ class ElevationGrid implements GridInterface
     }
 
     /**
+     * Find the points which match the elevation $char
+     *
+     * @param string $char
+     *
+     * @return Point[]
+     */
+    public function findByHeight(int $height): array
+    {
+        $matches = [];
+
+        for ($x = 0; $x < count($this->grid); $x++) {
+            for ($y = 0; $y < count($this->grid[$x]); $y++) {
+                $point = new Point($x, $y);
+                if ($this->getValue($point)->getHeight() === $height) {
+                    $matches[] = $point;
+                }
+            }
+        }
+
+        return $matches;
+    }
+
+    /**
      * Create a grid instance for a given input file
      *
      * @param string $filename

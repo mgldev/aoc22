@@ -21,7 +21,7 @@ class ElevationPoint
     {
         $this->height = match ($this->heightChar) {
             'E' => 26,
-            'S' => 0,
+            'S' => 1,
             default => ord($this->heightChar) - 96
         };
     }

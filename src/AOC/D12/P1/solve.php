@@ -7,7 +7,7 @@ use AOC\D12\P1\NeighbourResolver\ElevationNeighbourResolver;
 
 require_once __DIR__ . '/../../../../vendor/autoload.php';
 
-$grid = ElevationGrid::fromInput(__DIR__ . '/../input-example.txt');
+$grid = ElevationGrid::fromInput(__DIR__ . '/../input.txt');
 $neighbourResolver = new ElevationNeighbourResolver($grid);
 $pathFinder = new PathFinder($neighbourResolver);
 $start = $grid->getStartNode();
